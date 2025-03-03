@@ -61,7 +61,7 @@ Cada carpeta dentro de la carpeta `clases` corresponde a una sesión específica
 
 2. **Acceder a las Carpetas**: Navega a la carpeta del proyecto y accede a las subcarpetas correspondientes a clases, tareas o talleres. Por ejemplo:
     ```bash
-    cd nombre-del-repositorio/clases/clase1
+    cd https://github.com/rickyurvinaunab/IntroProgra-2025-1/clases/clase1
     ```
 
 3. **Ejecutar los Ejercicios**: Cada carpeta contiene scripts de Python con los ejercicios. Puedes ejecutar los scripts utilizando el siguiente comando:
@@ -82,7 +82,7 @@ Si encuentras algún error o tienes sugerencias para mejorar el contenido, no du
 ## Contacto
 
 Para cualquier consulta, puedes contactarme en:
-- **Email**: rurvinac@estudiante.uc.cl
+- **Email**: r.urvinacordova@uandresbello.edu
 - **GitHub**: [rickyurvinaunab](https://github.com/rickyurvinaunab)
 - **WebPage**: [rickyurvina.com](https://rickyurvina.com)
 
