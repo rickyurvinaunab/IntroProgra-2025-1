@@ -1,4 +1,4 @@
-# Repositorio de ejercicios de Python asignatura Introducción a la Programación IIC1103
+# Repositorio de ejercicios de Python asignatura Introducción a la Programación
 
 ![Python Logo](https://www.python.org/static/community_logos/python-logo.png)
 
@@ -56,7 +56,7 @@ Cada carpeta dentro de la carpeta `clases` corresponde a una sesión específica
 
 1. **Clonar el Repositorio**: Clona el repositorio en tu máquina local utilizando el siguiente comando:
     ```bash
-    git clone https://github.com/tuusuario/nombre-del-repositorio.git
+    git clone https://github.com/rickyurvinaunab/IntroProgra-2025-1
     ```
 
 2. **Acceder a las Carpetas**: Navega a la carpeta del proyecto y accede a las subcarpetas correspondientes a clases, tareas o talleres. Por ejemplo:
@@ -83,7 +83,7 @@ Si encuentras algún error o tienes sugerencias para mejorar el contenido, no du
 
 Para cualquier consulta, puedes contactarme en:
 - **Email**: rurvinac@estudiante.uc.cl
-- **GitHub**: [rickyurvinauc](https://github.com/rickyurvinauc)
+- **GitHub**: [rickyurvinaunab](https://github.com/rickyurvinaunab)
 - **WebPage**: [rickyurvina.com](https://rickyurvina.com)
 
 ---
