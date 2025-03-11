@@ -3,9 +3,9 @@ print("Mi nombre es: " + "Miguel")  # Esto imprime en consola Mi nombre es: Migu
 a = 3
 print(a)  # Esto imprime en consola 3
 print("El numero es: " + str(a))  # Esto imprime en consola El numero es: 3
-print("El numero es: " + a)  # Esto genera error de tipos
+# print("El numero es: " + a)  # Esto genera error de tipos
 
-a = input("Diga un nombre: ")
-b = int(input("Diga un numero: "))
-c = int(input("Diga otro numero: "))
-print("La suma de los numeros de " + a + " es: " + str(b + c))
+# a = input("Diga un nombre: ")
+# b = int(input("Diga un numero: "))
+# c = int(input("Diga otro numero: "))
+# print("La suma de los numeros de " + a + " es: " + str(b + c))
