@@ -65,7 +65,7 @@ while opcion != "1" and opcion != "2" and opcion != "3":
             alto = float(input("Ingrese el alto de la pared: "))
             area = largo * alto
             suma_areas += area
-        print("Dimensiones de laPuerta")
+        print("Dimensiones de la Puerta")
         largo_p = float(input("Ingrese el largo de la puerta: "))
         alto_p = float(input("Ingrese el alto de la puerta: "))
         area_p = largo_p * alto_p
