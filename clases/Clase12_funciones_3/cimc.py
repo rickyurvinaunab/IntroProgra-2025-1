@@ -1,6 +1,7 @@
-def calcular_imc(peso, altura):
+def calcular_imc(a, b):
 
-    return peso /altura**2
+    print("Tu hobby es:", hobby)
 
-def calcular_area(lado):
-    return lado**2
+    return a / b**2
+
+
