@@ -1,0 +1,3 @@
+Estudiante 1: 600
+Estudiante 2: 600
+Estudiante 4: 600
