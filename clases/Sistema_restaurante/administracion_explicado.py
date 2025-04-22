@@ -106,7 +106,7 @@ def mostrar_total():
     archivo.write(str(suma))  # Escribe el total
     archivo.close()
 
-def sistema_administracion(menu):
+def sistema_administracion():
     while True:
         # Menú principal del sistema de administración
         print("1. Agregar platos...")
