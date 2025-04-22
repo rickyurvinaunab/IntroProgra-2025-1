@@ -1,10 +1,7 @@
 # clase 20
 from administracion import sistema_administracion
 
-
 print("Bienvenido al restaurante Quiteno libre")
-
-menu = []
 
 while True:
     print("Menu de Opciones: ")
@@ -16,19 +13,12 @@ while True:
 
     if opcion == "1":
         print("Sistema de administracion...")
-        menu = sistema_administracion(menu)
+        sistema_administracion()
     elif opcion == "2":
         print("Sistema de clientes")
     elif opcion == "3":
         print("Saliendo del sistema....")
         break
-
-    elif opcion == "3":
-        print("Saliendo del sistema")
-        break
-
-
-            
 
 
 
