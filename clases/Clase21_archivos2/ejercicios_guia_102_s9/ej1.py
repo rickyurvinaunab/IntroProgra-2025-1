@@ -4,41 +4,94 @@
 # lotería primitiva, los almacene en una lista y los muestre por pantalla 
 # ordenados de menor a mayor.
 
-lista_ganadores = []
-while True:
-    print("Ingresa el numero ganador o ingresa -1 para salir.")
-    numero = int(input("Ingresa el numero ganador: "))
-    if numero == -1:
-        break
-    lista_ganadores.append(numero)
-lista_ganadores.sort()
-print("Numeros ganadores en Orden ascendente")
-for ganador in lista_ganadores:
-    print("El numero ganador es:", ganador)
+# lista_ganadores = []
+# nombre = "Ricardo Urvina"
+# while True:
+
+#     numero = int(input("Ingresa el numero ganador, o -1 para terminar: "))
+#     if numero == -1:
+#         break
+#     lista_ganadores.append(numero)
+
+# lista_ganadores.sort()
+# for numero in lista_ganadores:
+#     print("El ganador es:", numero)
 
 
-# lista = list(range(1,11))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# lista_ganadores = []
+# while True:
+#     print("Ingresa el numero ganador o ingresa -1 para salir.")
+#     numero = int(input("Ingresa el numero ganador: "))
+#     if numero == -1:
+#         break
+#     lista_ganadores.append(numero)
+# lista_ganadores.sort()
+# print("Numeros ganadores en Orden ascendente")
+# for ganador in lista_ganadores:
+#     print("El numero ganador es:", ganador)
+
+
+# lista =[]
+
+# for i in range(1,11):
+#     lista.append(i)
+# lista.sort(reverse=  True)
 
 # resultado = ""
-# for i in range(len(lista), 0, -1):
-#     resultado += str(i)+","
+
+# for item in lista:
+#     resultado += str(item)+","
 
 # print(resultado)
-# import copy
 
-# abecedario ="abcdefghijklmnoprstuvwxyz"
-# lista = []
-# for letra in abecedario:
-#     lista.append(letra)
-# print(lista)
-# copia = copy.deepcopy(lista)
-# for i in range(1,len(copia)+1):
-#     if i % 3 == 0:
-#         elemento_a_eliminar = copia[i-1]
-#         print("elemento a eliminar: ", elemento_a_eliminar)
-#         lista.remove(elemento_a_eliminar)
 
-# print(lista)
+
+
+
+
+
+import copy
+
+abecedario ="abcdefghijklmnoprstuvwxyz"
+lista = []
+for letra in abecedario:
+    lista.append(letra)
+print(lista)
+copia = copy.deepcopy(lista)
+for i in range(1,len(copia)+1):
+    if i % 3 == 0:
+        elemento_a_eliminar = copia[i-1]
+        print("elemento a eliminar: ", elemento_a_eliminar)
+        lista.remove(elemento_a_eliminar)
+print(lista)
+
+
+
+
+
+
+
+
+
+
+
 
 # numeros = [ 50, 75, 46, 22, 80, 65, 8]
 # print("min", min(numeros))
