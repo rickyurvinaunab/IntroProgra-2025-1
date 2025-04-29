@@ -45,6 +45,9 @@ def modificar_plato():
             if numero_plato < len(menu) and numero_plato >= 0:
                 plato = menu[numero_plato-1].strip()
                 plato_lista = plato.split()
+                # 1 Nombre: Pan Precio: 1500 Tipo de menu: 1
+                # plato_lista = ['#', '1','Nombre','Pan']
+
                 print("El plato a modificar es: ", plato_lista[3], "el precio es:", plato_lista[5])
                 nuevo_nombre = input("Ingresa el nuevo nombre: ")
                 nuevo_precio = input("Ingresa el nuevo precio: ")
@@ -58,7 +61,6 @@ def modificar_plato():
         else:
             print("El menu esta vacio.")
         
-
 def eliminar_plato():
     print("Eliminando un plato...")
     menu = obtener_info_menu()
@@ -102,7 +104,7 @@ def mostrar_total():
     archivo.close()
 
 def sistema_administracion():
-
+    print("Sistema de administracion...")
     while True:
         print("1. Agregar platos...")
         print("2. Modificar un plato...")
@@ -125,4 +127,3 @@ def sistema_administracion():
         elif opcion_adm == "6":
             print("Saliendo del sistema de adminsitracion")
             break
-    

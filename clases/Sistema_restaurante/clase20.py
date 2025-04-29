@@ -12,7 +12,6 @@ while True:
     opcion = input("Ingrese la opcion (1-3): ")
 
     if opcion == "1":
-        print("Sistema de administracion...")
         sistema_administracion()
     elif opcion == "2":
         print("Sistema de clientes")
