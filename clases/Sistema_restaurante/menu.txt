@@ -1,1 +1,3 @@
-# 2 Nombre: sanduche Precio: 4500 Tipo de menu: 2
+# 1 Nombre: Pan Precio: 15000 Tipo de menu: 1
+# 2 Nombre: queso Precio: 5500 Tipo de menu: 2
+# 3 Nombre: huevo Precio: 4500 Tipo de menu: 3
