@@ -1,26 +1,33 @@
 # Se importa el módulo os para trabajar con rutas de archivos
 import os
 
+
 # Funcion para mostrar todos los platos del menu actual
 def mostrar_menu():
     print("---------------------")
     print("Mostrando el menu....")
     menu = obtener_info_menu()  # Se obtiene la lista de platos desde el archivo menu.txt
+    indice = 1
     for plato in menu:
-        print(plato.strip())  # Se imprime cada plato quitando saltos de línea
+        datos = plato.strip().split(";")
+        if len(datos) == 3:
+            nombre, precio, tipo = datos
+            print(f"{indice}. {nombre} - Precio: {precio} - Tipo: {tipo}")
+            indice += 1
     print("------------------")
 
 # Funcion que busca si un plato ya existe en el menu
 def buscar_plato_menu(nombre_plato):
     menu = obtener_info_menu()
     for plato in menu:
-        if nombre_plato in plato:  # Si el nombre está en alguna línea del menu
+        datos = plato.strip().split(";")
+        if len(datos) >= 1 and nombre_plato == datos[0]:  # Comparar nombre exacto
             return True
     return False  # Si no se encuentra, retorna falso
 
 # Funcion que guarda el menu completo en el archivo menu.txt
 def guardar_menu_en_archivo(menu):
-    archivo = open('menu.txt','w')  # Se abre el archivo en modo escritura (sobrescribe todo)
+    archivo = open('menu.txt','w')  # Se abre el archivo en modo agregar
     archivo.writelines(menu)  # Se escriben todas las líneas del menu
     print("Menu guardado exitosamente...")
     archivo.close()
@@ -34,9 +41,13 @@ def agregar_plato():
         print("El plato", nombre_plato,"ya existe en el menu.")
     else:
         precio = input("Ingresa el precio del plato: ")
-        tipo_menu = input("Ingresa el tipo de menu (1) Desayuno, (2) Almuerzo, (3) Cena ")
-        # Se construye el string del nuevo plato con su formato
-        plato = "# " + str(len(menu)+1) + " Nombre: "+nombre_plato+" Precio: "+precio+" Tipo de menu: "+ tipo_menu+"\n"
+        tipo_menu = input("Ingresa el tipo de menu (1) Desayuno, (2) Almuerzo, (3) Cena: ")
+        tipos = ["Desayuno", "Almuerzo", "Cena"]
+        if tipo_menu in ["1", "2", "3"]:
+            tipo_texto = tipos[int(tipo_menu) - 1]
+        else:
+            tipo_texto = "Desconocido"
+        plato = f"{nombre_plato};{precio};{tipo_texto}\n"
         menu.append(plato)  # Se añade a la lista del menu
         guardar_menu_en_archivo(menu)  # Se guarda el nuevo menu
         print("Se agrego exitosamente al menu el plato", nombre_plato)
@@ -48,18 +59,26 @@ def modificar_plato():
     if len(menu) > 0:  # Si el menu no esta vacio
         mostrar_menu()
         numero_plato = int(input("Ingresa el numero de plato a editar: "))
-        if numero_plato < len(menu) and numero_plato >= 0:
+        if 1 <= numero_plato <= len(menu):
             plato = menu[numero_plato-1].strip()
-            plato_lista = plato.split()  # Se divide en palabras para acceder por indices
-            print("El plato a modificar es:", plato_lista[3], "el precio es:", plato_lista[5])
-            nuevo_nombre = input("Ingresa el nuevo nombre: ")
-            nuevo_precio = input("Ingresa el nuevo precio: ")
-            nuevo_tipo = input("Ingresa el nuevo tipo (1) Desayuno, (2) Almuerzo, (3) Cena: ")
-            # Se reconstruye la línea del plato con los nuevos datos
-            plato = "# " + str(numero_plato) + " Nombre: "+nuevo_nombre+" Precio: "+nuevo_precio+" Tipo de menu: "+ nuevo_tipo+"\n"
-            menu[numero_plato-1] = plato  # Se reemplaza en la posición correspondiente
-            guardar_menu_en_archivo(menu)
-            print("El plato:", nuevo_nombre,"se modifico exitosamente...")
+            datos = plato.split(";")
+            if len(datos) == 3:
+                nombre_actual, precio_actual, tipo_actual = datos
+                print(f"El plato a modificar es: {nombre_actual} - Precio: {precio_actual} - Tipo: {tipo_actual}")
+                nuevo_nombre = input("Ingresa el nuevo nombre: ")
+                nuevo_precio = input("Ingresa el nuevo precio: ")
+                nuevo_tipo = input("Ingresa el nuevo tipo (1) Desayuno, (2) Almuerzo, (3) Cena: ")
+                tipos = ["Desayuno", "Almuerzo", "Cena"]
+                if nuevo_tipo in ["1", "2", "3"]:
+                    nuevo_tipo_texto = tipos[int(nuevo_tipo) - 1]
+                else:
+                    nuevo_tipo_texto = tipo_actual
+                plato_modificado = f"{nuevo_nombre};{nuevo_precio};{nuevo_tipo_texto}\n"
+                menu[numero_plato-1] = plato_modificado
+                guardar_menu_en_archivo(menu)
+                print("El plato:", nuevo_nombre,"se modifico exitosamente...")
+            else:
+                print("Formato incorrecto del plato seleccionado.")
         else:
             print("El plato", numero_plato,"no existe en el menu")
     else:
@@ -72,10 +91,12 @@ def eliminar_plato():
     if len(menu) > 0:
         mostrar_menu()
         numero_plato = int(input("Ingresa el numero de plato a eliminar: "))
-        if numero_plato < len(menu) and numero_plato >= 0:
+        if 1 <= numero_plato <= len(menu):
             plato_eliminado = menu.pop(numero_plato-1)  # Se elimina de la lista
             guardar_menu_en_archivo(menu)  # Se guarda el nuevo menu sin ese plato
-            print("El plato eliminado es:", plato_eliminado[0])
+            datos = plato_eliminado.strip().split(";")
+            nombre_eliminado = datos[0] if len(datos) > 0 else ""
+            print("El plato eliminado es:", nombre_eliminado)
         else:
             print("El plato", numero_plato,"no existe en el menu")
     else:
@@ -88,13 +109,12 @@ def obtener_info_menu():
 
     if not os.path.isfile(ruta_archivo):  # Si el archivo no existe
         print("El archivo menu.txt no existe.")
-        archivo = open('menu.txt','w')  # Se crea vacio
-        archivo.close()
+        archivo = open(ruta_archivo,'w')  # Se crea el archivo
         print("El archivo menu.txt fue creado exitosamente.!")
+        archivo.close()
         return menu
-    archivo = open('menu.txt','r')  # Se abre para lectura
+    archivo = open('menu.txt','r')  # Se abre el archivo en modo agregar
     contenido = archivo.readlines()
-    archivo.close()
     return contenido
 
 # Funcion que calcula el total de todos los precios del menu
@@ -102,35 +122,22 @@ def mostrar_total():
     menu = obtener_info_menu()
     suma = 0
     for plato in menu:
-        suma += int(plato.strip().split()[5])  # Se obtiene el precio (índice 5) y se suma
+        datos = plato.strip().split(";")
+        if len(datos) >= 2:
+            suma += int(datos[1])  # Se obtiene el precio (índice 1) y se suma
 
     print("El total de los:", len(menu), "platos es:", suma)
 
-    archivo = open('total_platos.txt','w')  # Se guarda el total en un archivo
+    archivo = open('total_platos.txt','w')
     archivo.write(str(suma))
-    archivo.close()
-
-# Funcion que actualiza los indices de los platos despues de agregar, modificar o eliminar
-def actualizar_indices():
-    menu = obtener_info_menu()
-    menu_nuevo = []
-    indice = 1
-    for plato in menu:
-        datos = plato.split()
-        # Se reconstruye cada linea con su nuevo indice
-        plato_str = "# " + str(indice) + " Nombre: "+datos[3]+" Precio: "+datos[5]+" Tipo de menu: "+ datos[9]+"\n"
-        indice += 1
-        menu_nuevo.append(plato_str)
-    guardar_menu_en_archivo(menu_nuevo)
 
 # Funcion que calcula el total de dinero gastado en todas las ordenes registradas
 def mostrar_total_ordenes(ordenes):
     total = 0
     for orden in ordenes:
-        if "Orden" not in orden:  # Se omiten las lineas que indican "Orden #:"
-            datos = orden.split()
-            costo = datos[5]  # Se extrae el precio (índice 5)
-            total += float(costo)
+        datos = orden.strip().split(";")
+        precio = float(datos[2])  # Se intenta convertir directamente a float
+        total += precio
     return total
 
 # Funcion principal del sistema de administracion
@@ -149,13 +156,10 @@ def sistema_administracion(ordenes):
 
         if opcion_adm == "1":
             agregar_plato()
-            actualizar_indices()
         elif opcion_adm == "2":
             modificar_plato()
-            actualizar_indices()
         elif opcion_adm == "3":
             eliminar_plato()
-            actualizar_indices()
         elif opcion_adm == "4":
             mostrar_menu()
         elif opcion_adm == "5":

@@ -1,2 +1,0 @@
-Orden #: 1
-# 1 Nombre: Pan Precio: 15000 Tipo de menu: 1

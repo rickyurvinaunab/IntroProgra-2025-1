@@ -1,5 +1,3 @@
-# clase 20
-
 # Se importan las funciones necesarias desde los modulos administracion y clientes
 from administracion import sistema_administracion
 from clientes import sistema_cliente, obtener_info_ordenes

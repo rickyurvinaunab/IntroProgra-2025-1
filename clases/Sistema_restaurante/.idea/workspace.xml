@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7dddd16-98f7-4d49-9252-534b7b119c20" name="Changes" comment="Sistema restaurante archivos" />
+    <list default="true" id="e7dddd16-98f7-4d49-9252-534b7b119c20" name="Changes" comment="Sistema restaurante archivos">
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Clase28_disenando_funciones_2/evaluacion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Clase28_disenando_funciones_2/evaluacion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Clase28_disenando_funciones_2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Clase28_disenando_funciones_2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/administracion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/administracion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/clientes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/clientes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/menu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/ordenes.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +26,9 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="f3b30ccc-fa86-41c1-80e9-3e756728dee9" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2wVaLnD6S8EKSRoUOFNgW8uVgKL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,12 +36,47 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sistema_restaurante" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -46,6 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746129142405</updated>
       <workItem from="1746129144209" duration="44000" />
+      <workItem from="1746405833774" duration="2005000" />
     </task>
     <task id="LOCAL-00001" summary="Sistema restaurante archivos">
       <option name="closed" value="true" />
@@ -64,5 +113,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sistema restaurante archivos" />
     <option name="LAST_COMMIT_MESSAGE" value="Sistema restaurante archivos" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Sistema_restaurante$main.coverage" NAME="main Coverage Results" MODIFIED="1746407749815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../../../../../../OneDrive-UniversidadCatólicadeChile/Documents/UNAB/2025-1/IntroProgra-15320/Codigos/clases/Sistema_restaurante" />
   </component>
 </project>
