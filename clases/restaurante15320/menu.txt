@@ -1,0 +1,2 @@
+pan;1500.0
+queso con higos;1500
