@@ -1,0 +1,5 @@
+sdf;2143;Almuerzo
+ghjj;1000;Almuerzo
+uuu;9000;Desayuno
+eee;12;Almuerzo
+fgf;567;Cena

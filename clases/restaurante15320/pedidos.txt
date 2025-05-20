@@ -1,0 +1,2 @@
+Ricardo;choclo;1500
+Lucas;queso;500
