@@ -1,4 +1,15 @@
 # Toda la logica del administrador
+def mostrar_total_vendido():
+    archivo = open('pedidos.txt','r')
+    contenido = archivo.readlines()
+    total = 0
+    for linea in contenido:
+        #linea = "Ricardo;choclo;1500\n"
+        datos = linea.strip().split(';')
+        # datos = ["Ricardo","choclo","1500"]
+        total += float(datos[-1])
+    print("El total vendido es", total)
+
 def agregar_plato():
     archivo = open('menu.txt','a')
     nombre = input("ingresa el nombre del plato: ")
@@ -36,7 +47,6 @@ def mostrar_menu():
         datos = plato.strip().split(';')
         print("Plato #", indice, "Nombre:", datos[0], "Precio:", datos[1])
         indice =  indice + 1
-    
     return contenido
 
 def eliminar_plato():
@@ -58,7 +68,6 @@ def eliminar_plato():
     archivo.close()
     print("El plato eliminado es:", plato_eliminado)
 
-
 def sistema_administracion():
     print("-"*8)
     print("Sistema de administracion")
@@ -68,7 +77,9 @@ def sistema_administracion():
         print("1. Agregar plato")
         print("2. Modificar plato")
         print("3. Eliminar plato")
-        print("4. Salir")
+        print("4. Mostrar menu")
+        print("5. Mostrar total vendido")
+        print("6. Salir")
         opcion = input("Administrador ingresa tu opcion (1-3):")
         if opcion == "1":
             agregar_plato()
@@ -77,6 +88,10 @@ def sistema_administracion():
         elif opcion == "3":
             eliminar_plato()
         elif opcion == "4":
+            mostrar_menu()
+        elif opcion == "5":
+            mostrar_total_vendido()
+        elif opcion == "6":
             print("Saliendo del sistema de administracion")
             break
         opcion = ""

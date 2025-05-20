@@ -1,2 +1,4 @@
-pan;1500.0
 queso con higos;1500
+choclo;1500
+higos;2500
+queso;500

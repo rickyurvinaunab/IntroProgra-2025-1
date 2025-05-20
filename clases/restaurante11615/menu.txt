@@ -1,2 +1,2 @@
 pan;1500
-leche;1000
+pastel de choclp;12000
