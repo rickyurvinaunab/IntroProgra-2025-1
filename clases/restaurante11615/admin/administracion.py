@@ -1,3 +1,16 @@
+def obtener_total_ventas():
+    archivo =  open('pedidos.txt','r')
+    pedidos =  archivo.readlines()
+    total = 0
+    for pedido in pedidos:
+        #pedido = "Ricardo;pastel de choclp;12000\n"
+        pedido =  pedido.strip()
+        #pedido = "Ricardo;pastel de choclp;12000"
+        datos =  pedido.split(';')
+        # datos = ['Ricardo','pastel de choclp','12000']
+        total = total + float(datos[-1])
+    print("El total de las ordenes es:", total)
+
 def agregar_plato():
     print("Funcion para agregar un plato...")
     archivo = open('menu.txt','a')
@@ -53,7 +66,8 @@ def sistema_administracion():
         print("1. Agregar un plato")
         print("2. Modificar un plato")
         print("3. Eliminar un plato")
-        print("4. Salir")
+        print("4. Mostrar total de ordenes")
+        print("5. Salir")
         opcion = input("Selecciona la opcion que deseas (1-2): ")
         if opcion == "1":
             agregar_plato()
@@ -62,6 +76,8 @@ def sistema_administracion():
         elif opcion == "3":
             eliminar_plato()
         elif opcion == "4":
+            obtener_total_ventas()
+        elif opcion == "5":
             print("Saliendo del sistema de admin")
             break
         
