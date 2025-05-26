@@ -2,7 +2,7 @@ def obtener_total_ventas():
     archivo =  open('pedidos.txt','r')
     pedidos =  archivo.readlines()
     total = 0
-    for pedido in pedidos:
+    for pedido in range(pedidos):
         #pedido = "Ricardo;pastel de choclp;12000\n"
         pedido =  pedido.strip()
         #pedido = "Ricardo;pastel de choclp;12000"
