@@ -15,7 +15,7 @@ class Pelicula:
         self.calcular_promedio()
 
     def calcular_promedio(self):
-        if self.puntos:
+        if len(self.puntos) > 0:
             suma = sum(self.puntos)
             self.promedio = round(suma / len(self.puntos), 1)
         else:
