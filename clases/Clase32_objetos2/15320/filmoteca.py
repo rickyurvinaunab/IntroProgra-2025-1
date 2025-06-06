@@ -37,10 +37,12 @@ class Filmoteca:
         lista_promedios = []
         for peli in self.peliculas:
             lista_promedios.append(peli.promedio)
-        
-        return lista_promedios
+        max_promedio =  max(lista_promedios)
+        for peli in self.peliculas:
+            if peli.promedio == max_promedio:
+                return peli
             
-        
+        return         
 
 filmoteca = Filmoteca("Netflix")
 pelicula1 = Pelicula("Star Wars 1", 1999, "Ficcion","Una pelicula de ficcion")
