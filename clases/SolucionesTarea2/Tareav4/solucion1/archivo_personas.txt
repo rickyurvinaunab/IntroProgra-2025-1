@@ -1,0 +1,8 @@
+245761040;Tobias;Alguibay;Tobias.alguibay@gmail.com;22222222;01102005;ostras;0;0;tobi_10;99384;1
+248765432;Ricardito;Algui;cualquier@gmail.com;978607667;45/11/1940;sdñklfsdkjsdlf;0;0;Algui;112233;1
+237894561;RICKY;URVINA;correo@example.com;956734512;12/08/2000;av. falsa 123;5750;5100;RICKY;123;0
+239875430;Pepito;Luna;pluna@mail.cl;934567123;30/06/1975;calle 7 norte;0;0;Luna;778899;0
+228765412;Julian;Torres;jtorres@correo.cl;912345678;01/01/1990;pje. escondido 99;0;0;Torres;990011;0
+246781234;Antonia;Reyes;areyes@outlook.com;945678321;25/12/1985;villa primavera 456;0;1700;Reyes;223344;0
+245760361;Beatriz Lopez;Lopez;lopzbetty@gmail.com;+569787965322;24/11/1976;Vilanova 693 Las condes;2000;750;BettyBup;tobito;0
+

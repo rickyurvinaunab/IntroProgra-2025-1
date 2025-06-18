@@ -1,0 +1,19 @@
+9788499920015;El principito;Infantil;Antoine de Saint-Exupery;Salamandra;Primera;1943;1500;1
+9788437604947;Cien anos de soledad;Novela;Gabriel Garcia Marquez;Debolsillo;Vigesima;1967;2800;1
+9788420471830;1984;Distopia;George Orwell;Penguin Random House;Decima;1949;2500;1
+9788401020491;Don Quijote de la Mancha;Clasico;Miguel de Cervantes;Planeta;Quincuagesima;1605;3000;1
+9788478884451;Harry Potter y la piedra filosofal;Fantasia;J.K. Rowling;Salamandra;Quinta;1997;1800;3
+9788433966607;La sombra del viento;Misterio;Carlos Ruiz Zafon;Anagrama;Septima;2006;2700;1
+9788432230003;El gran Gatsby;Novela;F. Scott Fitzgerald;Seix Barral;Duodecima;1925;2200;1
+9788497592471;Orgullo y prejuicio;Romance;Jane Austen;Austral;Octava;1813;1900;2
+9788497593256;Dracula;Terror;Bram Stoker;Austral;Decima;1897;2400;2
+9788499890029;El senor de los anillos;Fantasia;J.R.R. Tolkien;Minotauro;Primera;1954;3000;1
+9788408000678;Matar a un ruisenor;Drama;Harper Lee;Debolsillo;Quinta;1960;2300;2
+9788499086053;Las aventuras de Tom Sawyer;Aventura;Mark Twain;Austral;Novena;1876;1700;2
+9788497593638;Frankenstein;Ciencia Ficcion;Mary Shelley;Austral;Cuarta;1818;2100;1
+9788420404494;Moby Dick;Aventura;Herman Melville;Penguin Random House;Tercera;1851;2600;1
+9788423305432;El alquimista;Autoayuda;Paulo Coelho;Planeta;Decimoquinta;1988;2000;3
+9788433967888;Un mundo feliz;Distopia;Aldous Huxley;Anagrama;Primera;1932;2450;2
+9788497590897;Donde habitan los monstruos;Infantil;Maurice Sendak;Alfaguara;Primera;1963;1600;3
+9788420404418;La metamorfosis;Filosofia;Franz Kafka;Alianza Editorial;Septima;1915;2050;1
+9788499920107;El codigo Da Vinci;Misterio;Dan Brown;Umbriel;Duodecima;2003;2750;1
