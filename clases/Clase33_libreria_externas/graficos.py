@@ -16,6 +16,7 @@ def graficar_promedios_peliculas(filmoteca):
     plt.title("Promedio de puntuaciones por pelicula")
     plt.xlabel("Peliculas")
     plt.ylabel("Promedio de puntuacion")
+    plt.grid()
     plt.xticks(rotation=45)
     plt.tight_layout()
     plt.show()
