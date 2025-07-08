@@ -69,8 +69,8 @@ def ver_promedios_sexo(lista_estudiantes):
         inidce_c += 1
     
     
-    print("El sexo M tiene un total de" + str(sexos[0][3])+ " y un promedio de: " + str(sexos[0][2]))
-    print("El sexo F tiene un total de" + str(sexos[1][3])+ " y un promedio de: " + str(sexos[1][2]))
+    print("El sexo M tiene un total de: " + str(sexos[0][3])+ " y un promedio de: " + str(sexos[0][2]))
+    print("El sexo F tiene un total de: " + str(sexos[1][3])+ " y un promedio de: " + str(sexos[1][2]))
 
 def ver_montos_mayores_menores(lista_estudiantes):
     min_e = 10000000
@@ -112,11 +112,11 @@ def ver_grafico(lista_estudiantes):
     plt.show()
 
 lista_estudiantes = [
-    Estudiante("1-9", "Ana Torres", "F", "universidad", "Calle 1", "sj", 30000),
-    Estudiante("2-7", "Luis Pérez", "M", "colegio", "Calle 2", "sj", 25000),
-    Estudiante("3-5", "Carla Díaz", "F", "universidad", "Calle 3", "macul", 40000),
-    Estudiante("4-4", "Pedro Gómez", "M", "colegio", "Calle 4", "macul", 22000),
-    Estudiante("5-3", "Sofía Rivas", "F", "universidad", "Calle 5", "providencia", 27000)
+    Estudiante("1-9", "Ingrid", "F", "universidad", "Calle 1", "sj", 30000),
+    Estudiante("2-7", "Ricardo", "M", "colegio", "Calle 2", "sj", 25000),
+    Estudiante("3-5", "Joseph", "F", "universidad", "Calle 3", "macul", 40000),
+    Estudiante("4-4", "Benja", "M", "colegio", "Calle 4", "macul", 22000),
+    Estudiante("5-3", "Sofi", "F", "universidad", "Calle 5", "providencia", 27000)
 ]
 # lista_estudiantes = []
 opcion = ""
